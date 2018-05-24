@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 跨域的解决方法：请求的url是静态的html页面 -->
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/common.css">
+	<link rel="stylesheet" href = "style/index.css">
+</head>
+<body>
+  
+    <div id="headWrap"></div>
+    <!-- 轮播图 -->
+    <div class="contentcarousel_asset_body w">
+            <ul id="contentcarousel_list">
+                <li class="pic_all "><img src="https://ehaoyao.oss-cn-hangzhou.aliyuncs.com/2018/5/23/1527055160781_70.jpg" /></li>
+                <li class="pic_all "><img src="https://ehaoyao.oss-cn-hangzhou.aliyuncs.com/2018/5/17/1526549455055_60.jpg" /></li>
+                <li class="pic_all active"><imgsrc="https://ehaoyao.oss-cn-hangzhou.aliyuncs.com/2018/5/8/1525768462656_51.jpg" /></li>
+                <li class="pic_all "><img src="https://ehaoyao.oss-cn-hangzhou.aliyuncs.com/2018/5/11/1526028272215_12.jpg" /></li>
+                <li class="pic_all "><img src="https://ehaoyao.oss-cn-hangzhou.aliyuncs.com/2018/4/25/1524648278242_44.jpg" /></li>
+            </ul>
+            <div class="gp6-banner-pagination"></div>
+            <!-- <div class="gp6-button-prev"></div>
+            <div class="gp6-button-next"></div>						 -->
+        </div>
+    <!-- 内容区域 -->
+    <div>
+        <div class="content w">
+            <!--  /*每日推荐*/ -->
+            <div class="day_recommend ov">
+                <h3>
+                    <i class="red_strip"></i>每日推荐
+                </h3>
+                <ul id="wrap">
+                </ul>
+            </div>
+        <div class="clearflix"></div>
+        <!-- 贴心药师 -->
+        <div class="in_pharmacist turnPicBox ov clearflix">
+            <h3>
+                <i class="red_strip"></i>贴心药师
+                <span>(服务时间：9：00-18：00)</span>
+            </h3>
+            <div class="cont">
+                <ul id="tiexin">
+                </ul>
+            </div>
+        </div>
+        <!--活动推荐/品牌专题/专科用药 -->
+        <div class="activiy_tab ov clearflix">
+			<div class="ac_tab ov clearflix">
+				<ul>
+					<li class="active">活动推荐
+						<i>|</i>
+					</li>
+					<li>品牌专题
+						<i>|</i>
+					</li>
+					<li>专科用药</li>
+				</ul>
+            </div>
+        </div>
+        <div class="ac_cont clearflix ov">
+                <!-- 活动推荐 -->
+            <ul class="ac_item ac_item1">
+                <li>
+                    <a target="_blank" href="#">
+                    <img src="picture/1518055874969_72.png">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="# ">
+                    <img src="picture/1524212913926_30.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                    <img src="picture/1518055990145_34.png">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                    <img src="picture/1518056005350_71.png">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                    <img src="picture/1524815323123_48.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /*广告*/ -->
+        <div class="w_ad w index-ad clearflix">
+            <a target="_blank" href="http://www.ehaoyao.com/search/%E4%B8%B9%E8%8E%AA">
+                <img src="picture/1524107542328_4.jpg">
+            </a>
+        </div>
+        <!-- 1F -->
+        <div class="floor_list w_ad  w clearflix ov">
+            <div class="w ov clearflix">
+                <img src="picture/1514012791019_2.jpg">
+            </div>
+			<div class="floor_left">
+			<!--1F商品分类  -->
+			<dl style="height:350px;">
+				<dt class="clearflix">商品分类</dt>
+				<dd class="list_n">
+                    <a target="_blank" href="#">
+					<i></i>胃痛胃胀</a>
+					<a target="_blank" href="#">
+					<i></i>血糖监测</a>
+					<a target="_blank" href="#">
+					<i></i>感冒发烧</a>
+					<a target="_blank" href="#">
+					<i></i>家庭理疗</a>
+					<a target="_blank" href="#">
+					<i></i>止咳化痰</a>
+					<a target="_blank" href="#">
+					<i></i>创口护理</a>
+					<a target="_blank" href="#">
+					<i></i>咽喉肿痛</a>
+					<a target="_blank" href="#">
+					<i></i>鼻腔护理</a>
+					<a target="_blank" href="#">
+					<i></i>鼻塞鼻炎</a>
+					<a target="_blank" href="#">
+					<i></i>痔疮</a>
+					<a target="_blank" href="#">
+					<i></i>口腔溃疡</a>
+					<a target="_blank" href="#">
+					<i></i>安神助眠</a>
+					<a target="_blank" href="#">
+					<i></i>视力疲劳</a>
+					<a target="_blank" href="#">
+					<i></i>抗菌消炎</a>
+					<a target="_blank" href="#">
+					<i></i>哮喘</a>
+					<a target="_blank" href="#">
+					<i></i>泻火通便</a>					
+				</dd>
+			</dl>
+			<!-- 1F品牌推荐 -->
+			<dl>
+						<dt class="clearflix brand_title">
+							<img src="picture/1515634633209_31.jpg" alt="品牌推荐">
+						</dt>
+						<dd class="brand_icon">
+							<a target="_blank" href="#">
+								<img src="picture/1514009136959_98.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1514009136607_82.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1514009136459_13.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1514009138576_26.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1513846239209_15.jpg">
+							</a>
+							<a target="_blank" href=#">
+								<img src="picture/1513846239380_70.jpg">
+							</a>
+						</dd>
+			</dl>
+            </div>
+            <!-- 1F商品细节 -->
+			<div class="floor_right">
+					<div class="con_lf">
+						<ul class="wrap">
+                        </ul>
+                    </div>
+                <div class="con_rt">
+                    <div class="pro_l left">
+                        <a target="_blank" href="#" title="益肝明目口服液">
+                            <img src="picture/1523356593379_57.jpg" alt="益肝明目口服液">
+                        </a> 
+                    </div>
+            <div class="pro_r right">
+                <ul>
+                    <li>
+                        <div class="des">江中</div>
+                        <div class="name">江中 健胃消食片 0.8g*32片</div>
+                        <div class="price">
+                            <em>￥</em>12
+                        </div>
+                        <div class="imgHeight">
+                            <a target="_blank" href="#" title="江中 健胃消食片 0.8g*32片">
+                            <img src="picture/1517968573072_22.png" alt="江中 健胃消食片 0.8g*32片">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                <div class="pro_img clearflix ov">
+                    <a target="_blank" href="#" title="鹿迪 桔贝合剂 10ml*6支">
+                    <img src="picture/1516692631894_4.jpg" alt="鹿迪 桔贝合剂 10ml*6支">
+                    </a>
+                </div>
+            </div>
+            </div>
+         </div><!--1F结束 -->
+        
+				<div class="w ov clearflix">
+					<img src="picture/1514012791161_86.jpg">
+				</div>
+				<div class="floor_left">
+					<!--2F商品分类  -->
+					<dl style="height: 350px;">
+						<dt class="clearflix red_bg">商品分类</dt>
+						<dd class="list_n">
+							<a target="_blank" href="#">
+								<i></i>高血压</a>
+							<a target="_blank" href="#">
+								<i></i>甲亢甲减</a>
+							<a target="_blank" href="#">
+								<i></i>高血脂</a>
+							<a target="_blank" href="#">
+								<i></i>痛风</a>
+							<a target="_blank" href="#">
+								<i></i>冠心病</a>
+							<a target="_blank" href="#">
+								<i></i>骨质疏松</a>
+							<a target="_blank" href="#">
+								<i></i>糖尿病</a>
+							<a target="_blank" href="#">
+								<i></i>颈椎病</a>
+							<a target="_blank" href="#">
+								<i></i>帕金森</a>
+							<a target="_blank" href="#">
+								<i></i>风湿关节炎</a>
+							<a target="_blank" href="#">
+								<i></i>老年痴呆</a>
+							<a target="_blank" href="#">
+								<i></i>外用贴膏</a>
+							<a target="_blank" href="#">
+								<i></i>中风</a>
+							<a target="_blank" href="#">
+								<i></i>跌打损伤</a>
+							<a target="_blank" href="#">
+								<i></i>脑血管疾病</a>
+							<a target="_blank" href="#">
+								<i></i>腰肌劳损</a>
+							<a target="_blank" href="#">
+								<i></i>中医保健</a>
+						</dd>
+					</dl>
+					<dl>
+						<!-- 2F品牌推荐 -->
+						<dt class="clearflix brand_title">
+							<img src="picture/1515634633209_31.jpg" alt="品牌推荐">
+						</dt>
+						<dd class="brand_icon">
+							<a target="_blank" href="#">
+								<img src="picture/1514009139388_18.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1514009137630_47.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1514009138417_14.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1514009139036_78.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1513846239523_19.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1513846239710_58.jpg">
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<!-- 楼层二样式 -->
+				<div class="floor_right red_line">
+					<div class="con_up">
+						<div class="pro_l left">
+							<a target="_blank" href="#" title="同溢堂 益安宁丸 112s*3瓶">
+								<img src="picture/1516692757238_48.jpg" alt="同溢堂 益安宁丸 112s*3瓶">
+							</a>
+						</div>
+						<div class="pro_r right">
+							<ul>
+								<li>
+									<div class="des">欧姆龙</div>
+									<div class="name">欧姆龙血压计 家用上臂式血压仪HEM-7052 电子血压计</div>
+									<div class="price">
+										<em>￥</em>
+										329
+									</div>
+									<div class="imgHeight">
+										<a target="_blank" href="/product-7555.html" title="欧姆龙血压计 家用上臂式血压仪HEM-7052 电子血压计">
+											<img src="picture/1524648719972_29.png" alt="欧姆龙血压计 家用上臂式血压仪HEM-7052 电子血压计">
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="con_down">
+						<ul class="left">
+							<li>
+								<div class="des">汤臣倍健</div>
+								<div class="name">【买一送一 送原品】汤臣倍健 液体钙软胶囊成人补钙 100粒</div>
+								<div class="price">
+									<em>￥</em>88</div>
+								<div class="imgHeight">
+									<a target="_blank" href="#" title="【买一送一 送原品】汤臣倍健 液体钙软胶囊成人补钙 100粒">
+										<img src="picture/1516692858822_26.png" alt="【买一送一 送原品】汤臣倍健 液体钙软胶囊成人补钙 100粒">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="des"> 鸿茅</div>
+								<div class="name">鸿茅药酒 500ml </div>
+								<div class="price">
+									<em>￥</em>298</div>
+								<div class="imgHeight">
+									<a target="_blank" href="#" title="鸿茅药酒 500ml ">
+										<img src="picture/1516692922299_53.png" alt="鸿茅药酒 500ml ">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="des">恒瑞</div>
+								<div class="name">恒瑞 非布司他片 40mg*10片</div>
+								<div class="price">
+									<em>￥</em>99</div>
+								<div class="imgHeight">
+									<a target="_blank" href="#" title="恒瑞 非布司他片 40mg*10片">
+										<img src="picture/1516692964668_43.png" alt="恒瑞 非布司他片 40mg*10片">
+									</a>
+								</div>
+							</li>
+						</ul>
+						<div class="rig_img" style="height: 372px;">
+							<a target="_blank" href="#" title="成博士 参花消渴茶 3g*60袋">
+								<img src="picture/1516692986359_49.jpg" alt="成博士 参花消渴茶 3g*60袋">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="floor_list w_ad  w clearflix ov">
+				<div class="w ov clearflix">
+					<img src="picture/1514012791328_0.jpg">
+				</div>
+				<div class="floor_left">
+					<dl style="height: 350px;">
+						<dt class="clearflix">商品分类</dt>
+						<dd class="list_n">
+							<a target="_blank" href="#">
+								<i></i>阳痿早泄</a>
+							<a target="_blank" href="#">
+								<i></i>脱发白发</a>
+							<a target="_blank" href="#">
+								<i></i>前列腺</a>
+							<a target="_blank" href="#">
+								<i></i>尿路感染</a>
+							<a target="_blank" href="#">
+								<i></i>补肾壮阳</a>
+							<a target="_blank" href="#">
+								<i></i>尿频尿急</a>
+							<a target="_blank" href="#">
+								<i></i>滋阴补肾</a>
+							<a target="_blank" href="#">
+								<i></i>保肝护肝</a>
+							<a target="_blank" href="#">
+								<i></i>少精弱精</a>
+							<a target="_blank" href="#">
+								<i></i>滋肾养肝</a>
+							<a target="_blank" href="#">
+								<i></i>抗疲劳</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="clearflix brand_title">
+							<img src="picture/1515634633209_31.jpg" alt="品牌推荐">
+						</dt>
+						<dd class="brand_icon">
+							<a target="_blank" href="#">
+								<img src="picture/1514009137812_69.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1514009137965_92.jpg">
+							</a>
+							<a target="_blank" href="#">
+								<img src="picture/1514009139263_6.jpg">
+							</a>
+							<a target="_blank" href="/search/辉瑞">
+								<img src="picture/1514009138720_73.jpg">
+							</a>
+							<a target="_blank" href="/search/汇仁">
+								<img src="picture/1513846239866_61.jpg">
+							</a>
+							<a target="_blank" href="/search/必利劲">
+								<img src="picture/1513846240069_42.jpg">
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<!-- 楼层一样式 -->
+				<div class="floor_right">
+					<div class="con_lf">
+						<ul>
+							<li>
+								<div class="des">万艾可</div>
+								<div class="name">万艾可 枸橼酸西地那非片 50mg*10粒</div>
+								<div class="price">
+									<em>￥</em>
+									459
+								</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-57489.html" title="万艾可 枸橼酸西地那非片 50mg*10粒">
+										<img src="picture/1516693087489_65.png" alt="万艾可 枸橼酸西地那非片 50mg*10粒">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="des">广誉远</div>
+								<div class="name">广誉远 龟龄集 0.3g*30粒 </div>
+								<div class="price">
+									<em>￥</em>
+									528
+								</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-24847.html" title="广誉远 龟龄集 0.3g*30粒 ">
+										<img src="picture/1516693111535_53.png" alt="广誉远 龟龄集 0.3g*30粒 ">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="des">博科</div>
+								<div class="name">博科 益肾健骨胶囊 0.35g*36粒 </div>
+								<div class="price">
+									<em>￥</em>
+									24
+								</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-34614.html" title="博科 益肾健骨胶囊 0.35g*36粒                                                                              ">
+										<img src="picture/1516693127927_94.png" alt="博科 益肾健骨胶囊 0.35g*36粒                                                                              ">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="con_rt">
+						<div class="pro_l left">
+							<a target="_blank" href="product-16187.html" title="施强 复方玄驹胶囊 0.42g*54s">
+								<img src="picture/1516693144830_58.jpg" alt="施强 复方玄驹胶囊 0.42g*54s">
+							</a>
+						</div>
+						<div class="pro_r right">
+							<ul>
+								<li>
+									<div class="des">万正</div>
+									<div class="name">万正 羊藿巴戟口服液 10ml*10支</div>
+									<div class="price">
+										<em>￥</em>
+										158
+									</div>
+									<div class="imgHeight">
+										<a target="_blank" href="/product-46406.html" title="万正 羊藿巴戟口服液 10ml*10支">
+											<img src="picture/1516693177481_46.png" alt="万正 羊藿巴戟口服液 10ml*10支">
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="pro_img clearflix ov">
+							<a target="_blank" href="product-43820.html" title="启悦 非那雄胺片(天方) 1mg*7s*4板 薄膜衣">
+								<img src="picture/1516693164852_21.jpg" alt="启悦 非那雄胺片(天方) 1mg*7s*4板 薄膜衣">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- 楼层二样式 -->
+			</div>
+			<div class="floor_list w_ad  w clearflix ov">
+				<div class="w ov clearflix">
+					<img src="picture/1514012791476_79.jpg">
+				</div>
+				<div class="floor_left">
+					<dl style="height: 350px;">
+						<dt class="clearflix red_bg">商品分类</dt>
+						<dd class="list_n">
+							<a target="_blank" href="products/c367-s428.html">
+								<i></i>减肥瘦身</a>
+							<a target="_blank" href="products/c367-s431.html">
+								<i></i>乳腺增生</a>
+							<a target="_blank" href="products/c367-s429.html">
+								<i></i>祛斑美容</a>
+							<a target="_blank" href="products/c367-s423.html">
+								<i></i>产后用药</a>
+							<a target="_blank" href="products/c367-s430.html">
+								<i></i>月经不调</a>
+							<a target="_blank" href="products/c367-s422.html">
+								<i></i>避孕药</a>
+							<a target="_blank" href="products/c367-s426.html">
+								<i></i>阴道炎</a>
+							<a target="_blank" href="products/c367-s421.html">
+								<i></i>保胎促孕</a>
+							<a target="_blank" href="products/c367-s427.html">
+								<i></i>更年期</a>
+							<a target="_blank" href="products/c367-s425.html">
+								<i></i>妇科外用</a>
+							<a target="_blank" href="products/c367-s399.html">
+								<i></i>补气补血</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="clearflix brand_title">
+							<img src="picture/1515634633209_31.jpg" alt="品牌推荐">
+						</dt>
+						<dd class="brand_icon">
+							<a target="_blank" href="/search/拜耳">
+								<img src="picture/1514009138266_50.jpg">
+							</a>
+							<a target="_blank" href="/search/康缘">
+								<img src="picture/1514009138114_42.jpg">
+							</a>
+							<a target="_blank" href="/search/东阿">
+								<img src="picture/1514009136767_8.jpg">
+							</a>
+							<a target="_blank" href="/search/九芝堂">
+								<img src="picture/1514009137147_49.jpg">
+							</a>
+							<a target="_blank" href="/search/千金">
+								<img src="picture/1513846240234_26.jpg">
+							</a>
+							<a target="_blank" href="/search/舒尔佳">
+								<img src="picture/https://ehaoyao.oss-cn-hangzhou.aliyuncs.com/2017/12/21/1513846240382_16.jpg">
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div class="floor_right red_line">
+					<div class="con_up">
+						<div class="pro_l left">
+							<a target="_blank" href="product-61570.html" title="丹莪妇康煎膏">
+								<img src="picture/1523356866640_62.jpg" alt="丹莪妇康煎膏">
+							</a>
+						</div>
+						<div class="pro_r right">
+							<ul>
+								<li>
+									<div class="des">广誉远</div>
+									<div class="name">广誉远定坤丹 7g*4瓶 </div>
+									<div class="price">
+										<em>￥</em>
+										198
+									</div>
+									<div class="imgHeight">
+										<a target="_blank" href="/product-53450.html" title="广誉远定坤丹 7g*4瓶 ">
+											<img src="picture/1516693343886_45.png" alt="广誉远定坤丹 7g*4瓶 ">
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="con_down">
+						<ul class="left">
+							<li>
+								<div class="des">舒尔佳</div>
+								<div class="name">舒尔佳 奥利司他胶囊 共2盒</div>
+								<div class="price">
+									<em>￥</em>298</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-60079.html" title="舒尔佳 奥利司他胶囊 共2盒">
+										<img src="picture/1523357169934_40.png" alt="舒尔佳 奥利司他胶囊 共2盒">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="des">盘龙云海</div>
+								<div class="name">包邮)盘龙云海 排毒养颜胶囊70粒</div>
+								<div class="price">
+									<em>￥</em>89</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-1712.html" title="包邮)盘龙云海 排毒养颜胶囊70粒">
+										<img src="picture/1516693475831_70.png" alt="包邮)盘龙云海 排毒养颜胶囊70粒">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="des">克龄蒙</div>
+								<div class="name">克龄蒙戊酸雌二醇片/雌二醇环丙孕酮片复合包装 21粒</div>
+								<div class="price">
+									<em>￥</em>75</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-15350.html" title="克龄蒙戊酸雌二醇片/雌二醇环丙孕酮片复合包装 21粒">
+										<img src="picture/1516693567046_39.png" alt="克龄蒙戊酸雌二醇片/雌二醇环丙孕酮片复合包装 21粒">
+									</a>
+								</div>
+							</li>
+						</ul>
+						<div class="rig_img" style="height: 372px;">
+							<a target="_blank" href="product-16789.html" title="妇复春">
+								<img src="picture/1523356983328_87.jpg" alt="妇复春">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="floor_list w_ad  w clearflix ov">
+				<div class="w ov clearflix">
+					<img src="picture/1514012791618_13.jpg">
+				</div>
+				<div class="floor_left">
+					<dl style="height: 350px;">
+						<dt class="clearflix">商品分类</dt>
+						<dd class="list_n">
+							<a target="_blank" href="products/c363-s31.html">
+								<i></i>宝宝奶粉</a>
+							<a target="_blank" href="products/c363-s35.html">
+								<i></i>营养辅食</a>
+							<a target="_blank" href="products/c363-s32.html">
+								<i></i>尿裤湿巾</a>
+							<a target="_blank" href="products/c363-s34.html">
+								<i></i>宝宝洗护</a>
+							<a target="_blank" href="products/c367-s403.html">
+								<i></i>感冒发热</a>
+							<a target="_blank" href="products/c363-s228.html">
+								<i></i>儿童玩具</a>
+							<a target="_blank" href="products/c367-s406.html">
+								<i></i>补钙补锌</a>
+							<a target="_blank" href="products/c363-s225.html">
+								<i></i>儿童餐具</a>
+							<a target="_blank" href="products/c363-s216.html">
+								<i></i>妈咪奶粉</a>
+							<a target="_blank" href="products/c367-s408.html">
+								<i></i>消化不良</a>
+							<a target="_blank" href="products/c364-s340.html">
+								<i></i>胎心仪</a>
+							<a target="_blank" href="products/c745-s392.html">
+								<i></i>叶酸多维</a>
+							<a target="_blank" href="products/c367-s409.html">
+								<i></i>止咳祛痰</a>
+							<a target="_blank" href="products/c368-s17.html">
+								<i></i>排卵早孕</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="clearflix brand_title">
+							<img src="picture/1515634633209_31.jpg" alt="品牌推荐">
+						</dt>
+						<dd class="brand_icon">
+							<a target="_blank" href="/search/迪巧">
+								<img src="picture/1514009138893_64.jpg">
+							</a>
+							<a target="_blank" href="/search/伊可新">
+								<img src="picture/1514009137319_1.jpg">
+							</a>
+							<a target="_blank" href="/search/玛特纳">
+								<img src="picture/1514341135143_95.jpg">
+							</a>
+							<a target="_blank" href="/search/合生元">
+								<img src="picture/1514009137454_75.jpg">
+							</a>
+							<a target="_blank" href="/search/爱乐维">
+								<img src="picture/1513846240533_20.jpg">
+							</a>
+							<a target="_blank" href="/search/伊利">
+								<img src="picture/1513846240690_53.jpg">
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<!-- 楼层一样式 -->
+				<div class="floor_right">
+					<div class="con_lf">
+						<ul>
+							<li>
+								<div class="des">火火兔</div>
+								<div class="name">【立减20送防摔包】火火兔 儿童早教故事机 蓝色 G6</div>
+								<div class="price">
+									<em>￥</em>
+									158
+								</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-56560.html" title="【立减20送防摔包】火火兔 儿童早教故事机 蓝色 G6">
+										<img src="picture/1516694042969_86.png" alt="【立减20送防摔包】火火兔 儿童早教故事机 蓝色 G6">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="des">家典美</div>
+								<div class="name">（直降）家典美韩式爱心便携密封多用餐具 550ml</div>
+								<div class="price">
+									<em>￥</em>
+									33
+								</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-44456.html" title="（直降）家典美韩式爱心便携密封多用餐具 550ml">
+										<img src="picture/1516694065795_24.png" alt="（直降）家典美韩式爱心便携密封多用餐具 550ml">
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="des">五羊</div>
+								<div class="name">（活动）五羊妈咪长效防溢乳垫 100片</div>
+								<div class="price">
+									<em>￥</em>
+									29.9
+								</div>
+								<div class="imgHeight">
+									<a target="_blank" href="/product-59962.html" title="（活动）五羊妈咪长效防溢乳垫 100片">
+										<img src="picture/1516694080508_80.png" alt="（活动）五羊妈咪长效防溢乳垫 100片">
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="con_rt">
+						<div class="pro_l left">
+							<a target="_blank" href="search/惠氏启赋?tp=100003.200199.-1.-1.-1.-1.-1&tc=-1.-1.7.惠氏启赋.-1" title="惠氏启赋系列（900g）">
+								<img src="picture/1516694110329_86.jpg" alt="惠氏启赋系列（900g）">
+							</a>
+						</div>
+						<div class="pro_r right">
+							<ul>
+								<li>
+									<div class="des">好奇</div>
+									<div class="name">好奇铂金装倍柔亲肤透气纸尿裤 S 58加12片</div>
+									<div class="price">
+										<em>￥</em>
+										93
+									</div>
+									<div class="imgHeight">
+										<a target="_blank" href="/product-25047.html" title="好奇铂金装倍柔亲肤透气纸尿裤 S 58加12片">
+											<img src="picture/1516694138854_9.png" alt="好奇铂金装倍柔亲肤透气纸尿裤 S 58加12片">
+										</a>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+						<div class="pro_img clearflix ov">
+							<a target="_blank" href="products/c363-s31-b美素佳儿.html?type=1" title="美素佳儿金装系列（900g）">
+								<img src="picture/1516694124820_75.jpg" alt="美素佳儿金装系列（900g）">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- 楼层二样式 -->
+			</div>   
+                
+</div>
+<div id="footerWrap"></div>
+<script src="src/libs/require.js"></script>
+		<script>
+			require(["src/libs/requireconfig"],function(){
+				require(["model/index"]);
+			})			
+        </script>
+
+<script src="src/libs/jquery-3.3.1.js"></script>
+<script src="src/libs/jquery.banner.js"></script>
+<script>
+        //轮播图
+        $(function(){
+            $(".contentcarousel_asset_body")
+            .gpBanner("#contentcarousel_list",{
+                navigation: {
+                    nextEl: '.gp6-button-next',
+                    prevEl: '.gp6-button-prev',
+                },
+                pagination:{
+                    el:".gp6-banner-pagination"
+                },
+                direction:"fade",
+                loop:true
+            }) 
+            timer1=setInterval(function(){
+                $(".gp6-button-next").trigger("click")
+            },3000)
+            $(".pic_all").hover(function(){//第一个function是鼠标移入的事件,第二个function是鼠标移出的事件
+                clearInterval(timer1)
+            },function(){
+                timer1=setInterval(function(){
+                    $(".gp6-button-next").trigger("click")
+                },3000)
+            })
+         }) 
+</script>
+</body>
+</html>

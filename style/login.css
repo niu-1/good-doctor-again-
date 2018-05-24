@@ -1,0 +1,184 @@
+#lgnBox{
+    height:100%;
+    background-color:#fff;
+    color:#999;
+    font-family:"\5FAE\8F6F\96C5\9ED1";
+}
+.cf{
+    clear:both;
+}
+.center{
+    width:1200px;
+    margin:0 auto;
+    /* background:blue; */
+}
+.cf:after{
+    clear: both;
+    content:"";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+#lgnBox .hyHeader .logo{
+    float:left;
+    display: inline-block;
+    width:366px;
+    height:97px;
+    background:url(../images/logo.jpg) no-repeat center center;
+}
+#lgnBox .hyHeader span{
+    float: left;
+    display: inline-block;
+    margin-left:20px;
+    padding-top:55px;
+    font-size:18px;
+    color:#ea5514;
+}
+.hyBody{
+    min-height:589px;
+    background-color:#f2f2f2;
+}
+.loginContainer{
+    padding-top:90px;
+    min-width:1200px;
+    height:499px;
+    background:#ff334c url(../images/bg_login.jpg) no-repeat center center;
+}
+.loginWrap{
+    float: right;
+    width:350px;
+    background-color:#fff;
+}
+#lgnBox .loginWrap .accountBox{
+    padding:40px 25px;
+    width:299px;
+    height:340px;
+    border:1px solid #dfdfdf;
+    overflow: hidden;
+}
+.hyBody .title{
+    font-size:12px;
+    color:#484848;
+    padding-bottom:20px;
+}
+#lgnBox .loginWrap .title h2{
+    float: left;
+    font-size:18px;
+    font-weight:400;
+    color:#3c3c3c;
+}
+/* .loginWrap .title a{
+    float:right;
+    display:block;
+    color:#ea5514;
+    font-size:14px;
+} */
+.loginWrap .wp .item{
+    position:relative;
+    width:300px;
+    height:40px;
+    border:1px solid #dfdfdf;
+}
+.loginWrap .wp .item .i-account-laber{
+    background:#f3f3f3 url(../images/icon_account.png) no-repeat center center;
+}
+.loginWrap .wp .item .item-laber{
+    float: left;
+    display: inline-block;
+    width:38px;
+    height:40px;
+    line-height:40px;
+    font-size:16px;
+    text-align:center;
+    border-right:1px solid #dfdfdf;
+    overflow: hidden;
+}
+.loginWrap .wp .item .inputText{
+    float: left;
+    display: inline-block;
+    width:260px;
+    height:40px;
+    line-height:40px;
+    border:0;
+    text-indent:10px;
+    font-size:14px;
+}
+input{
+    outline:none;
+    background:none;
+    /* 用户无法调整元素的尺寸 */
+    resize:none;
+    vertical-align:middle;
+}
+.loginWrap .wp .item .clear-btn{
+    position:absolute;
+    width:18px;
+    height:18px;
+    top:11px;
+    right:12px;
+    background:url(../images/icon_clear.png) no-repeat center center;
+    cursor: pointer;
+}
+.loginWrap .wp .item-tips{
+    height:12px;
+    line-height:12px;
+    color:#ea5514;
+}
+.loginWrap .wp .item .i-pwd-label{
+    background:#f3f3f3 url(../images/icon_pwd.png) no-repeat center center;
+}
+.loginWrap .wp .item-chk{
+    margin-bottom:6px;
+}
+.loginWrap .wp .item-chk .chkbox{
+    position: relative;
+    top:2px;
+}
+.mb10{
+    margin-bottom:10px;
+}
+.loginWrap .wp .item-chk label{
+    line-height:20px;
+    cursor: pointer;
+}
+#lgnBox .btn-login{
+    background:#ff334c;
+}
+.loginWrap .wp .btn{
+    display:block;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:20px;
+    color:#fff;
+    border:0;
+    border-radius:0;
+}
+.loginWrap .wp .item-rgt{
+    margin-top:14px;
+}
+.loginWrap .wp .item-rgt span{
+    display:block;
+    height:20px;
+}
+.lFloat{
+    float: left;
+}
+.loginWrap .wp .item-rgt span a{
+    color:#ea5514;
+    font-size:12px;
+}
+.loginWrap .wp .item-rgt i{
+    position: relative;
+    top:2px;
+    margin-left:8px;
+    display: inline-block;
+    width:12px;
+    height:12px;
+    background:url(../images/icon_rgst_n.png) no-repeat center center;
+}
+.loginWrap .wp a{
+    text-decoration:none;
+}
+
+

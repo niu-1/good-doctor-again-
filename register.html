@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/register.css">
+</head>
+<body id="lgnBox">
+    <!-- 头部 -->
+        <div class="hyHeader">
+            <div id="logo" class="center cf">
+                <a class="logo" href="/" title="好药师"></a>
+                <span>欢迎注册</span>
+                <p class="loginTips">我已经注册，马上<a href="login.html" class="btn_login">登录</a></p>
+            </div>
+        </div>
+        <div class="hyBody" id="contentWrap">
+            <div id="registerWrap">
+                <div class="register-tab">
+                    <div class="tabContent">
+                        <div class="tabItem">
+                            <form name="phoneRgst" class="wp register phoneRgst">
+                                <div class="item cf">
+                                    <label for="telphone" class="item-label telphone-label">账&nbsp;号&nbsp;</label>
+                                    <input type="text" class="inputText w240" id="telphone" name="telphone" placeholder="请输入手机/邮箱" value autocomplete="off">
+                                    <span class="clear-btn"></span>
+                                </div>
+                                <p class="item-tips item-tips-phone"></p>
+                                <div class="item cf">
+                                    <label for="pwd" class="item-label pwd-label">密&nbsp;&nbsp;码</label>
+                                    <input type="text" class="inputText" id="pwd1" name="password" placeholder="请输入密码">
+                                    <span class="clear-btn"></span>
+                                </div>
+                                <p class="item-tips item-tips-pwd"></p>
+                                <div class="item cf">
+                                    <!-- 通过给<input>设置id属性，在<label>标签中设置for=id来让说明文本和对应的<input>关联起来 -->
+                                        <label for="pwd" class="item-label pwd-label">确&nbsp;认&nbsp;密&nbsp;码</label>
+                                        <input type="text" class="inputText" id="pwd2" name="password" placeholder="请确认密码">
+                                        <span class="clear-btn"></span>
+                                </div>
+                                <!--  -->
+                                <div class="item-chk cf">
+                                        <input type="checkbox" id="agreeInfo" class="chkbox" checked="checked" name="agreeInfo" tabindex="6">
+                                        <label for="agreeInfo">
+                                            我已阅读并同意：<a href="#" class="font_blue">《好药师用户注册协议》</a>
+                                        </label>
+                                </div>
+                                <!-- <p id="verifyTips" class="verifyTips item-tips item-tips-agree"></p> -->
+                                <!-- 注册按钮 -->
+                                <div class="item mt20">
+                                    <button class="registerAccount btn-register btn" type="button">
+                                            注&nbsp;&nbsp;册
+                                    </button>
+                                </div>
+                           
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src= "src/libs/jquery-3.3.1.js"></script>
+        <script>
+            $(function(){
+                $(".btn").on("click",function(){
+                    this.username = $("#telphone");
+                    this.pwd1 = $("#pwd1");
+                    this.pwd2 = $("#pwd2");
+                    this.opt = {
+                        url:"http://localhost:81/program1/php/register.php",
+                        type:"post",
+                        data:{
+                            username:this.username,
+                            pwd:this.pwd1,
+                            pwd2:this.pwd2
+                        }
+                    }
+                    $.ajax(this.opt)
+                    .then(function(res){
+                        console.log(res);
+                    })
+                })
+            })
+        </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+#lgnBox{
+    height:100%;
+    background-color:#fff;
+    color:#999;
+    font-family:"\5FAE\8F6F\96C5\9ED1";
+}
+.cf{
+    clear:both;
+}
+.center{
+    width:1200px;
+    margin:0 auto;
+    /* background:blue; */
+}
+.cf:after{
+    clear: both;
+    content:"";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+#lgnBox .hyHeader .logo{
+    float:left;
+    display: inline-block;
+    width:366px;
+    height:97px;
+    background:url(../images/logo.jpg) no-repeat center center;
+}
+#lgnBox .hyHeader span{
+    float: left;
+    display: inline-block;
+    margin-left:20px;
+    padding-top:55px;
+    font-size:18px;
+    color:#ea5514;
+}
+#lgnBox .hyHeader .loginTips{
+    float:right;
+    padding-top:40px;
+    font-size:16px;
+}
+#lgnBox .hyHeader .btn_login{
+    color:#ff334c;
+}
+#lgnBox .hyBody{
+    min-height:589px;
+    background-color:#f2f2f2;
+}
+#registerWrap{
+    padding:70px 0;
+}
+#lgnBox .register-tab{
+    margin:0 auto;
+    width:1000px;
+    background-color:#fff;
+    overflow: hidden;
+}
+#lgnBox .register-tab .tabContent{
+    height:500px;
+    border:1px solid #dfdfdf;
+    overflow: hidden;
+}
+#lgnBox .register-tab .tabContent .tabItem{
+    margin:60px auto 0;
+    width:398px;
+}
+#lgnBox .wp .item{
+    width:398px;
+    position:relative;
+    height:40px;
+    border:1px solid #dfdfdf;
+}
+/* 将item-label分开写，底下的边框就能显示出来？*/
+#lgnBox .wp.register .item .item-label{
+    width:110px;
+    border-right:0;
+}
+#lgnBox .item .item-label{
+    float:left;
+    display: inline-block;
+    height:40px;
+    line-height:40px;
+    font-size:16px;
+    text-align:center;
+    background-color:#f3f3f3;
+    overflow: hidden;
+}
+#lgnBox .wp .item .inputText{
+    width:240px;
+    float:left;
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    border:0;
+    text-indent:10px;
+    font-size:14px;
+    overflow: hidden;
+}
+#lgnBox .wp .item .clear-btn{
+    position: absolute;
+    width:18px;
+    height:18px;
+    top:11px;
+    right:12px;
+    background:url(../images/icon_clear.png) no-repeat center center;
+    cursor: pointer;
+}
+#lgnBox .item-tips{
+    margin-bottom:5px;
+    height:30px;
+    line-height:30px;
+}
+.item-chk{
+    margin-top:30px;
+}
+#lgnBox .chkbox{
+    position: relative;
+    top:2px;
+}
+#lgnBox a{
+    color:red;
+    text-decoration:none;
+}
+#lgnBox .item-tips{
+    margin-bottom:5px;
+    height:30px;
+    line-height:30px;
+}
+.btn-register{
+    background: #ff334c;
+}
+#lgnBox .wp .btn{
+    display:block;
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:20px;
+    color:#fff;
+    border:0;
+    border-radius:0;
+}
+.mt20{
+    margin-top:20px;
+}
+

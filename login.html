@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<!-- 头部 -->
+<body id="lgnBox">
+    <div class="hyHeader">
+        <div id="logo" class="center cf">
+            <a class="logo" href="/" title="好药师"></a>
+            <span>欢迎登录</span>
+        </div>
+    </div>
+<!-- 内容 -->
+    <div class="hyBody" id="contentWrap">
+        <div class="loginContainer" id="loginContainer">
+            <div class="center cf">
+                <div class="loginWrap">
+                    <div class="accountBox">
+                        <form class="wp accountLogin">
+                            <div class="title cf">
+                                <h2>会员登录</h2>
+                            </div>
+                            <!--输入账号和密码的两个框，两个框的样式一样 -->
+                            <div class="item cf">
+                                <label for="loginName" class="item-laber i-account-laber"></label>
+                                <!-- 账号 -->
+                                <input type="text" id="loginName" class="inputText" name="loginName" placeholder="手机/邮箱/用户名" value autocomplete="off" tabindex="1">
+                                <span class="clear-btn clear-btn-ln"></span>
+                            </div>
+                            <p class="item-tips item-tips-login-name"></p>
+                            <div class="item cf">
+                                <label for="loginPwd" class="item-laber i-pwd-label"></label>
+                                <!-- 密码 -->
+                                <input type="text" id="loginPwd" class="inputText" name="loginPwd" placeholder="密码" value autocomplete="off" tabindex="2">
+                                <span class="clear-btn clear-btn-lp"></span>
+                            </div>
+                            <p class="item-tips item-tips-login-pwd"></p>
+                            <div class="item-chk cf">
+                                <input type="checkbox" name="autoLogin" class="chkbox chkbox2 mb10" tabindex="3">
+                                <label for="autoLogin">7天内自动登录</label>
+                            </div>
+                            <!-- 此处为登录按钮，向后台发送信息，和数据库中存储的数据进行对比 -->
+                            <div class="item">
+                                <button class="btn-login btn" type="button">
+                                    登&nbsp;&nbsp;录
+                                </button>
+                            </div>
+                            <div class="item-rgt cf">
+                                <span class="lFloat btn_registNow">
+                                    <a href="register.html">
+                                        立即注册
+                                        <i></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </form>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="libs/jquery-3.3.1.js"></script> 
+<script>
+    $(function(){
+        $(".btn").on("click",function(){
+           
+            //点击登录按钮，发送ajax请求，将前端的数据发送给后台
+            //把登录信息交给后台验证
+            var username = $("#loginName").val();
+            var password = $("#loginPwd").val();
+          
+            var opt = {
+                //登录的PHP接口路径
+                url:"http://localhost:81/program1/php/login.php",
+                type:"post",
+                // 后端定义的字段名：username和password
+                data:{
+                    username:username,
+                    password:password
+                  
+                }
+            }
+            //每次点击，ajax进行一次数据的发送
+            $.ajax(opt)
+            .then(function(res){
+                if(res ="1"){
+                    location.href = "Index.html";
+                }
+                
+            })
+        })
+    })
+</script>  
+</body>
+</html>
