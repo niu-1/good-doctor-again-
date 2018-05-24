@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-<script src="libs/jquery-3.3.1.js"></script> 
+<script src="src/libs/jquery-3.3.1.js"></script> 
 <script>
     $(function(){
         $(".btn").on("click",function(){
@@ -76,7 +76,7 @@
           
             var opt = {
                 //登录的PHP接口路径
-                url:"http://localhost:81/program1/php/login.php",
+                url:"http://localhost:81/good-doctor/php/login.php",
                 type:"post",
                 // 后端定义的字段名：username和password
                 data:{
@@ -89,7 +89,7 @@
             $.ajax(opt)
             .then(function(res){
                 if(res ="1"){
-                    location.href = "Index.html";
+                    location.href = "index.html";
                 }
                 
             })

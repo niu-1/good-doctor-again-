@@ -3,7 +3,6 @@
     $.fn.gpBanner = function(banner_selector,options){
         new Banner(banner_selector,options,this);
     }
-
     function Banner(banner_selector,options,base_ele){ 
         this.init(banner_selector,options,base_ele);
     }

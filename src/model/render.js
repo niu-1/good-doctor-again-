@@ -34,7 +34,7 @@ define(["jquery"],function(){
            return this.main.html(html);
         }
     } 
-    new Recommend("http://localhost:81/good-doctor/day_recommend.json","#wrap");
+    new Recommend("http://localhost:81/good-doctor/data/day_recommend.json","#wrap");
     //贴心药师
     function Iminate(url,selector){
         this.url = url;
@@ -76,7 +76,7 @@ define(["jquery"],function(){
             return this.main.html(html);
         }
     }
-    new Iminate("http://localhost:81/good-doctor/intimate_doctor.json","#tiexin");
+    new Iminate("http://localhost:81/good-doctor/data/intimate_doctor.json","#tiexin");
     //1F商品渲染
     function floorFirst(url,selector){
         this.url = url;
@@ -98,7 +98,7 @@ define(["jquery"],function(){
             return $.ajax(opt);
         },
         render(res){
-            console.log(res);
+            // console.log(res);
             var html = "";
             res.forEach(function(item){
                 html += `<li>
@@ -118,7 +118,7 @@ define(["jquery"],function(){
         return this.main.html(html);
         }
     }
-    new floorFirst("http://localhost:81/good-doctor/1F.json",".wrap");
+    new floorFirst("http://localhost:81/good-doctor/data/1F.json",".wrap");
     // 2F商品渲染
     // function floorSecond(url,selector){
     //     this.url = url;
@@ -160,5 +160,55 @@ define(["jquery"],function(){
     //     }
     // }
     // new floorSecond("http://localhost:81/good-doctor/2F.json",".wrap");
+    // 列表页
+    function List(url,selector){
+        this.url = url;
+        this.main = $(selector);
+        this.init();
+    }
+    List.prototype = {
+        constructor:List,
+        init(){
+        this.loading()
+        .then(function(res){
+            this.render(res);
+            // console.log(res);
+        }.bind(this));    
+        },
+        loading(){
+            var opt = {
+                url:this.url
+            }
+            return $.ajax(opt);
+        },
+        render(res){
+            // console.log(res);
+            var html = "";
+            res.forEach(function(item){
+                // console.log(item);
+                html += `
+                <li data-pharmacyid="25" data-productid="${item.productid}">
+                    <div class="icon-more"></div>
+                    <a target="_blank" href="${item.href}">
+                        <div class="imgHeight">
+                            <img src="${item.src}" alt="">
+                        </div>
+                    </a>
+                    <a target="_blank" href="${item.href}">
+                        <div class="name" title="${item.title}">${item.title}</div>
+                    </a>
+                    <div class="black" title=""></div>
+                    <div class="des">${item.des}</div>
+                    <div class="price">
+                        <span class="now_price">${item.now_price}</span>
+                        <span class="old_price">${item.old_price}</span>
+                    </div>
+                    <div class="btn_car">加入购物车</div>
+                </li>`
+            }.bind(this));
+        return this.main.html(html);
+        }
+    }
+    new List("http://localhost:81/good-doctor/data/list.json",".wrap");
 });
 
